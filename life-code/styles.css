@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cascadia Code";
+}
+
+body {
+  position: relative;
+  min-height: 500px;
+  width: 1500px;
+  background-image: linear-gradient(
+    127deg,
+    rgb(204, 32, 195),
+    rgb(132, 0, 255)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#window {
+  width: 800px;
+  height: max-content;
+  padding: 1rem;
+  background-color: rgb(35, 12, 56);
+  border-radius: 1rem;
+  box-shadow: 0 0 60px 18px rgba(0, 0, 0, 0.4);
+}
+
+#title-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.dot,
+.dot::before,
+.dot::after {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.dot::before,
+.dot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.dot::before {
+  left: 1.5rem;
+}
+
+.dot::after {
+  left: 3rem;
+}
+
+#title {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#editor {
+  padding: 3rem 1rem;
+}
+
+code {
+  font-size: 1.4rem;
+}
+
+.keyword,
+.operator {
+  color: rgb(69, 110, 221);
+}
+
+.object {
+  color: rgb(212, 36, 89);
+}
+
+.symbol {
+  color: white;
+}
+
+.method {
+  color: rgb(42, 216, 216);
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+}
+
+#css,
+#me {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+#css {
+  color: white;
+}
+
+#me {
+  color: rgb(217, 255, 92);
+}
