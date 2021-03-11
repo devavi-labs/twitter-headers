@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Cascadia Code";
+  font-family: "Cascadia Code", sans-serif;
   user-select: none;
 }
 
