@@ -2,12 +2,12 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Cascadia Code";
+  user-select: none;
 }
 
 body {
   position: relative;
-  min-height: 500px;
-  width: 1500px;
+  min-height: 100vh;
   background-image: linear-gradient(
     127deg,
     rgb(204, 32, 195),
@@ -16,11 +16,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 #window {
-  width: 800px;
+  max-width: 800px;
+  margin: 0 auto;
   height: max-content;
   padding: 1rem;
   background-color: rgb(35, 12, 56);
@@ -97,7 +98,10 @@ code {
 
 footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 1rem;
+  text-align: center;
 }
 
 #css,
